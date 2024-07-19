@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    font-size: smaller;
+}
+
+.logoimage{
+    width: 70%;
+    height: 119%;
+    margin-left: 266px;
+}
+
+.image{
+    background-image: url('/public/Images/teafarmer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.termstext{
+    display: flex;
+    margin-top: 500px;
+    margin-left: -270px;
+}
+
+#checkbox{
+    margin-top: -40px;
+    width: 15px;
+}
+
+#termsagree{
+    white-space: nowrap;
+    font-size: 12px;
+    margin-top: 1px;
+    /* margin-left: ; */
+}
+
+.signup-container{
+    margin-left: 100px;
+}
+
+.headings{
+    font-size: 14px;
+}
+
+#signuptext{
+    white-space: nowrap;
+}
+
+#signup{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    color: white; 
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+#logincall{
+    color: blue;
+    /* cursor: pointer; */
+}
+
+.input{
+    padding: 10px;
+    border: 1.5px solid;
+    border-color: green;
+    align-items: center;
+    width: 120%;
+    border-radius: 10px;
+    gap: 20%;
+}
+

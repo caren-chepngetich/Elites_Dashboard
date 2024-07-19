@@ -1,0 +1,61 @@
+/* .container button{
+    /* background-color: #496C00; */
+
+/* }  */
+
+.home-container{
+    background-image: url('/public/Images/teafarmer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+/* }  */
+
+.content {
+    text-align: center;
+    color: white;
+    margin-left: 250px;
+    /* margin-top: ; Adjust text color to ensure visibility on the image */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#getstartedbtn {
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: #496C00; /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#getstartedbtn:hover {
+    background-color: #45a049;
+}
