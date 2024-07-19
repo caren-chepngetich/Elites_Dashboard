@@ -3,7 +3,9 @@ import BarGraph from './barGraph'; // Adjust path based on your project structur
 import './index.css'; 
 const AnalyticsPage = () => {
   return (
+    
     <div className="analytics-page">
+      <h2>Analytics</h2>
       <div className="graph-container">
         <BarGraph />
       </div>
