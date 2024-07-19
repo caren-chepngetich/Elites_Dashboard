@@ -1,0 +1,77 @@
+/* Sidebar.css */
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #1B8E18;
+    color: white;
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 120px; /* Adjust as per your logo size */
+    height: auto;
+  }
+  
+  /* .line {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* White border line */
+    /* margin: 20px 0; */
+  
+  .sidebar h2 {
+    margin-left: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+  }
+  .dashboard {
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    cursor: pointer;
+    padding: 10px;
+  }
+  .dashboard p {
+    margin-left: 10px; /* Spacing between icon and text */
+  }
+.navigations{
+    position:absolute;
+    bottom:0;
+    /* gap: 5px; */
+}
+  

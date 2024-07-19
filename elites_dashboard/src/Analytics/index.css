@@ -1,0 +1,45 @@
+/* App.css */
+
+/* Overall app layout */
+  /* Sidebar styling */
+   .sidebar {
+    width: 250px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 20px;
+   }
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  
+  .sidebar .active {
+    font-weight: bold;
+  }
+  
+  /* Analytics page styling */
+  .analytics-page {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+  }
+  
+  .analytics-title {
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
