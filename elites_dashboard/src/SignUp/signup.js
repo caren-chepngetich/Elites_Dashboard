@@ -3,12 +3,6 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export function SignUp() {
-    // const navigate = useNavigate();
-
-    // const handleButtonClick = () => {
-    //     navigate('/login');
-    // };
-
     return (
         <div className='container'>
             <div className='signup-container'>
@@ -30,8 +24,10 @@ export function SignUp() {
                 <input type="password" name="confirmPassword" placeholder="Re-enter your password to confirm" className='input' required/><br></br>
 
                 <button id='signup'>Sign Up</button>
-                <p id='haveaccounttext'>Already have an account? 
+                <div id='custom-acc'>
+                <p id='login-btn'>Already have an account? 
                 <Link to="/login">Login</Link></p>
+                </div>
             </div>
 
             < div className='termstext'>
@@ -39,7 +35,7 @@ export function SignUp() {
                     <input type='checkbox' id='checkbox'/>
                 </div>
 
-                <div>
+                <div >
                     <p id='termsagree'>By clicking sign up, you agree to our terms and conditions</p>
                 </div>
             </div>
@@ -51,8 +47,3 @@ export function SignUp() {
         </div>
     );
 }
-
-
-
-
-
