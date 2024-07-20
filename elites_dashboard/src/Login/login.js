@@ -18,13 +18,13 @@ import { Link } from 'react-router-dom';
                 
                 <form className={styles.credentials}>
                     <label>Email Address</label>
-                    <br /><br />
-                    <input type='email' name='email' placeholder='Enter Your Email' className={styles.input} />
+                    {/* <br /><br /> */}
+                    <input type='email' name='email' placeholder='Enter Your Email' className={styles.input}  required/>
                     <br /><br />
                     
                     <label>Password</label>
-                    <br /><br />
-                    <input type='password' name='password' placeholder='Enter Password' className={styles.input} />
+                    {/* <br /><br /> */}
+                    <input type='password' name='password' placeholder='Enter Password' className={styles.input} required />
                     <br /><br />
                     
                     <button type="submit" className={styles.signinbtn}>Sign In</button>
@@ -35,14 +35,7 @@ import { Link } from 'react-router-dom';
                     </p>
                 </form>
                 
-                {/* <div className={styles.orDivider}>
-                    <hr /><p>Or</p><hr />
-                </div> */}
-                
-                {/* <button className={styles.googlebtn}>
-                    <FcGoogle className={styles.googleicon} />
-                    Continue With Google
-                </button> */}
+               
             </div>
         </div>
     );
