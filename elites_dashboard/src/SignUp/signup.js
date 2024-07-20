@@ -3,11 +3,11 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export function SignUp() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleButtonClick = () => {
-        navigate('/login');
-    };
+    // const handleButtonClick = () => {
+    //     navigate('/login');
+    // };
 
     return (
         <div className='container'>
@@ -29,7 +29,7 @@ export function SignUp() {
                 <p className='headings'>Confirm your password</p>
                 <input type="password" name="confirmPassword" placeholder="Re-enter your password to confirm" className='input' required/><br></br>
 
-                <button id='signup' onClick={handleButtonClick}>Sign Up</button>
+                <button id='signup'>Sign Up</button>
                 <p>Already have an account? 
                 <Link to="/login">Login</Link></p>
             </div>
