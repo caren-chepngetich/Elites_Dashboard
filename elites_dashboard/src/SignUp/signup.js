@@ -30,7 +30,7 @@ export function SignUp() {
                 <input type="password" name="confirmPassword" placeholder="Re-enter your password to confirm" className='input' required/><br></br>
 
                 <button id='signup'>Sign Up</button>
-                <p>Already have an account? 
+                <p id='haveaccounttext'>Already have an account? 
                 <Link to="/login">Login</Link></p>
             </div>
 
