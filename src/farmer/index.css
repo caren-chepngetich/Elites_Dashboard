@@ -1,0 +1,482 @@
+
+
+.farmers-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    /* border: 1px solid ; */
+    border-radius: 8px;
+    margin-left: 3%;
+    color:black;
+  }
+  
+  .farmer-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .farmer-row > * {
+    margin-right: 10px; 
+  }
+  
+  .farmer-column {
+    flex: 1;
+    padding: 8px;
+    margin: 2px;
+    /* border: 1px solid  #D9D9D9; */
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    /* color: #fff; */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .icon {
+    font-size: 24px; 
+  }
+  
+  input[type="text"], button {
+    font-size: 16px;
+    /* color: #D9D9D9; */
+  }
+  
+  button[type="button"] {
+    font-size: 14px;
+    color: white;
+  
+  }
+  
+  
+   
+   
+    @media screen and (min-width:280px) and (max-width:360px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: 3%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: grid;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+      }
+      
+      .farmer-column {
+        flex: 1;
+        padding: 8px;
+        margin: 2px;
+        /* border: 1px solid  #D9D9D9; */
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #007bff;
+        /* color: #fff; */
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 24px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 16px;
+       
+      }
+      
+      button[type="button"] {
+        font-size: 14px;
+        color: white;
+      
+      }
+      
+   }
+    @media screen and (min-width:361px) and (max-width:480px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: 15%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: grid;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+      }
+        
+      
+      button {
+        background-color: #007bff;
+        
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 7px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 10px;
+        width: 120%;
+        
+      }
+      
+      button[type="button"] {
+        font-size: 10px;
+        color: white;
+      
+      }
+      
+    }
+    @media screen and (min-width:481px) and (max-width:680px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: 10%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: grid;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+      }
+      
+      .farmer-column {
+        flex: 1;
+        padding: 8px;
+        margin: 2px;
+        /* border: 1px solid  #D9D9D9; */
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #007bff;
+        /* color: #fff; */
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 24px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 16px;
+        /* color: #D9D9D9; */
+      }
+      
+      button[type="button"] {
+        font-size: 14px;
+        color: white;
+      
+      }
+      
+     
+    }
+    @media screen and (min-width:681px) and (max-width:880px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: 10%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: grid;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+      }
+      
+      .farmer-column {
+        flex: 1;
+        padding: 8px;
+        margin: 2px;
+        /* border: 1px solid  #D9D9D9; */
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #007bff;
+        /* color: #fff; */
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 24px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 16px;
+        /* color: #D9D9D9; */
+      }
+      
+      button[type="button"] {
+        font-size: 14px;
+        color: white;
+      
+      }
+      
+     
+      
+  
+    }
+    @media screen and (min-width:881px) and (max-width:1020px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: -5%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+       
+      }
+      
+      .farmer-column {
+        flex: 1;
+        padding: 8px;
+        margin: 2px;
+        /* border: 1px solid  #D9D9D9; */
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #007bff;
+        /* color: #fff; */
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 24px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 6px;
+        /* color: #D9D9D9; */
+      }
+      
+      button[type="button"] {
+        font-size: 14px;
+        color: white;
+      
+      }
+      
+      
+    }
+    @media screen and (min-width:1021px) and (max-width:1280px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: -5%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+       
+      }
+      
+      .farmer-column {
+        flex: 1;
+        padding: 8px;
+        margin: 2px;
+        /* border: 1px solid  #D9D9D9; */
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #007bff;
+        /* color: #fff; */
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 24px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 6px;
+        /* color: #D9D9D9; */
+      }
+      
+      button[type="button"] {
+        font-size: 14px;
+        color: white;
+      
+      }
+      
+  
+    }
+  
+    @media screen and (min-width:1281px) and (max-width:1480px){
+      .farmers-form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        padding: 20px;
+        /* border: 1px solid ; */
+        border-radius: 8px;
+        margin-left: 14%;
+        color:black;
+      }
+      
+      .farmer-row {
+        display: grid;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .farmer-row > * {
+        margin-right: 10px; 
+      }
+      
+      .farmer-column {
+        flex: 1;
+        padding: 8px;
+        margin: 2px;
+        /* border: 1px solid  #D9D9D9; */
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #007bff;
+        /* color: #fff; */
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .icon {
+        font-size: 24px; 
+      }
+      
+      input[type="text"], button {
+        font-size: 16px;
+        /* color: #D9D9D9; */
+      }
+      
+      button[type="button"] {
+        font-size: 14px;
+        color: white;
+      
+      }
+      
+  
+    }
+    
+    
+    
