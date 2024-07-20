@@ -17,7 +17,7 @@ function Home(){
            <h1>Welcome to Umuhinzi Admin Dashboard</h1>
            <h3>For easy management of factroy records</h3>
            {/* <Link to="/signup"> */}
-           <button id="getstartedbtn" onClick={handleButtonClick}>Get started</button>
+           <button onClick={handleButtonClick}>Get started</button>
            {/* </Link> */}
           
             </div>

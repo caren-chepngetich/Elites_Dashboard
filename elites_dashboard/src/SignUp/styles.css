@@ -32,6 +32,10 @@
     width: 15px;
 }
 
+#endtext{
+    margin-left: 60px;
+}
+
 #termsagree{
     white-space: nowrap;
     font-size: 12px;
@@ -54,11 +58,12 @@
 #signup{
     background-color: green;
     padding: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color: white; 
-    width: 100%;
-    margin-left: 40px;
+    width: 50%;
+    margin-left: 110px;
     margin-top: 50px;
+    /* cursor: pointer; */
 }
 
 #logincall{
