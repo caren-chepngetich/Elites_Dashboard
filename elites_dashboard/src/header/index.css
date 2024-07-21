@@ -42,9 +42,9 @@
   }
   
   .factory-icons {
-    font-size: 32px;
-    width: 40px; 
-    height: 40px;
+    font-size: 32%;
+    /* width: 140%; 
+    height: 40px; */
   }
   
   .text-container {

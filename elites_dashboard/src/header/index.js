@@ -13,9 +13,11 @@ function Header() {
           <input type="text" placeholder="Search" className="search-bar" /><IoMdSearch className="searchbutton" />
 
           </div>
+        
           
           <div className="user-info">
-            <div>
+          {/* <div>Farmers</div> */}
+            <div >
             <GoBell className='factoryicons'/>
             <CgProfile className='factoryicons'/>
             </div>
