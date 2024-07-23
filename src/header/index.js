@@ -1,17 +1,12 @@
 import React from 'react';
-import './App.css';
+import './index.css';
 
-import Farmer from './farmer';
-import Sidebar from './sidebar';
 import { IoMdSearch } from "react-icons/io";
 import { GoBell } from "react-icons/go";
 import { CgProfile } from "react-icons/cg";
 
-function App() {
+function Header() {
   return (
-    <div className="App">
-      <Sidebar />
-      <div className="content">
         <header>
           <div>
           
@@ -19,10 +14,10 @@ function App() {
 
           </div>
         
-         
           
           <div className="user-info">
-            <div>
+          {/* <div>Farmers</div> */}
+            <div >
             <GoBell className='factoryicons'/>
             <CgProfile className='factoryicons'/>
             </div>
@@ -32,10 +27,7 @@ function App() {
             </div>
           </div>
         </header>
-        <Farmer/>
-      </div>
-    </div>
   );
 }
 
-export default App;
+export default Header;
