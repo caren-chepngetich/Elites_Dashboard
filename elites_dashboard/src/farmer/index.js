@@ -110,7 +110,7 @@ const FarmersForm = () => {
             required
             className="farmer-column"
           />
-          <button type="submit">Add Farmer</button>
+          <button className="submit">Add Farmer</button>
         </form>
       )}
 

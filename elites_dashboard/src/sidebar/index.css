@@ -328,7 +328,7 @@
   @media screen and (min-width:1021px) and (max-width:1279px){
     .sidebar {
       width: 250px;
-      height: 92.8vh;
+      height: 97vh;
       background-color: #009900;
       color: white;
       display: flex;
@@ -336,7 +336,7 @@
       justify-content: space-between;
       padding: 20px;
       flex-shrink: 0;
-      transition: transform 0.3s ease;margin-top: -10%;
+      transition: transform 0.3s ease;margin-top: -16%;
   
     }
     
