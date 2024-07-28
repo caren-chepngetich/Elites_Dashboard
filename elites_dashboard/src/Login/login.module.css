@@ -8,25 +8,30 @@
 }
 
 .container {
-    /* text-align: center; */
     margin-bottom: 50px;
     background-image: url('/public/Images/tea-plantation.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 105vh;
-        width: 80%;
-        margin-left: -405px;    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 105vh;
+    width: 80%;
+    margin-left: -405px;    
 }
 
 .signinbtn{
-    background-color: green;
-    padding: 10px;
+    background-color: #008000;
+    border: none;
+    padding: 7px;
     color: white; 
-    width: 40%;
-    margin-left: 90px;
-    margin-top: 20px;
+    width: 30%;
+    margin-left: 100px;
+    margin-top: 20px; 
+    border-radius: 10px;  
+    font-size: 17px; 
 }
+
+
+
 
 .dashboardtext {
     font-size: 50px;
@@ -60,17 +65,7 @@
     border: 1px solid green;
     border-radius: 4px;
 }
-/* 
-.credentials button {
-    width: 50%;
-    padding: 10px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 80px;
-} */
+
 
 .credentials button:hover {
     background-color: grey;
@@ -92,84 +87,6 @@
 }
 
 @media screen and (min-width:280px) and (max-width:360px) {
-    /* .logincontainer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 150vh;
-        background-color: #f5f5f5;
-        /* gap: 20%; */
-        /* max-width: 100%;
-    }
-    
-    .container {
-        /* text-align: center; */
-        /* margin-bottom: -130px;
-        background-image: url('/public/Images/tea-plantation.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 105vh;
-        width: 99%;
-        margin-left: 0px;    
-    }
-    
-    .dashboardtext {
-        font-size: 20px;
-        color: #ffffff;
-        margin-top: 100px;
-        text-align: center;
-        margin-left: 0%;
-        white-space: nowrap;
-    } */
-    
-    /* .loginContainer {
-        width: 220px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 5px 5px 5px 5px rgba(34,139,34,0.5);
-        background-color: white;
-        margin-left: 0px;
-        justify-content: flex-start;
-        margin-left: 0px;
-        margin-bottom: 25%;
-    }
-    
-    .credentials label {
-        display: block;
-        margin-top: 5px;
-    }
-    
-    .credentials input[type='email'],
-    .credentials input[type='password'] {
-        width: 90%;
-        padding: 10px;
-        margin-top: 5px;
-        border: 1px solid green;
-        border-radius: 4px;
-    }
-    
-    .credentials button {
-        width: 50%;
-        padding: 10px;
-        background-color: green;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-left:60px;
-    }
-    
-    .credentials button:hover {
-        background-color: grey;
-    }
-    
-    .signupcall {
-        margin-top: 10px;
-        margin-left: 25px;
-        white-space: nowrap;
-    }  */ 
-
     .logincontainer {
         flex-direction: column;
         justify-content: center;
@@ -181,7 +98,6 @@
     }
     
     .container {
-        /* text-align: center; */
         margin-top: -400px;
         background-image: url('/public/Images/tea-plantation.jpg');
         background-size: cover;
@@ -193,7 +109,7 @@
     }
     
     .dashboardtext {
-        font-size: 30px;
+        font-size: 20px;
         color: #ffffff;
         margin-top: 200px;
         text-align: center;
@@ -202,15 +118,14 @@
     }
     
     .loginContainer {
-        width: 85%;
+        width: 80%;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 5px 5px 5px 5px rgba(34,139,34,0.5);
         background-color: white;
         margin-left: 0px;
         justify-content: flex-start;
-        margin-left: 0px;
-        margin-top: -70%;
+        margin-top: -80%;
     }
     
     .credentials label {
@@ -235,7 +150,7 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        margin-left:100px;
+        margin-left:70px;
     }
     
     .credentials button:hover {
@@ -244,7 +159,7 @@
     
     .signupcall {
         margin-top: 10px;
-        margin-left: 75px;
+        margin-left: 35px;
         white-space: nowrap;
     }
       
@@ -259,12 +174,10 @@
         align-items: center;
         height: 150vh;
         background-color: #f5f5f5;
-        /* gap: 20%; */
         max-width: 100%;
     }
     
     .container {
-        /* text-align: center; */
         margin-top: -538px;
         background-image: url('/public/Images/tea-plantation.jpg');
         background-size: cover;
@@ -342,12 +255,10 @@
         align-items: center;
         height: 150vh;
         background-color: #f5f5f5;
-        /* gap: 20%; */
         max-width: 100%;
     }
     
     .container {
-        /* text-align: center; */
         margin-top: -506px;
         background-image: url('/public/Images/tea-plantation.jpg');
         background-size: cover;
@@ -375,7 +286,6 @@
         background-color: white;
         margin-left: 0px;
         justify-content: flex-start;
-        /* margin-left: 0px; */
         margin-top: -250px;
     }
     
@@ -428,7 +338,6 @@
     }
     
     .container {
-        /* text-align: center; */
         margin-bottom: -140px;
         background-image: url('/public/Images/tea-plantation.jpg');
             background-size: cover;
@@ -455,7 +364,6 @@
         box-shadow: 5px 5px 5px 5px rgba(34,139,34,0.5);
         background-color: white;
         margin-left: 0px;
-        /* justify-content: flex-start; */
     }
     
     .credentials label {
@@ -496,96 +404,16 @@
 
 
 @media screen and (min-width:881px) and (max-width:1020px){
-    /* .logincontainer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f5f5f5;
-        /* gap: 20%; */
-    /* }
-    
-    .container {
-        /* text-align: center; */
-        /* margin-bottom: -100px;
-        background-image: url('/public/Images/tea-plantation.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 105vh;
-            width: 143.8%;
-            margin-left: -405px;    
-    }
-    
-    .dashboardtext {
-        font-size: 80px;
-        color: #ffffff;
-        margin-top: 300px;
-        text-align: center;
-        margin-left: 30%;
-        white-space: nowrap;
-    }
-    
-    .loginContainer {
-        width: 800px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 5px 5px 5px 5px rgba(34,139,34,0.5);
-        background-color: white;
-        margin-left: 0px;
-        justify-content: flex-start;
-        margin-top: -100px;
-    }
-    
-    .credentials label {
-        display: block;
-        margin-top: 5px;
-    }
-    
-    .credentials input[type='email'],
-    .credentials input[type='password'] {
-        width: 90%;
-        padding: 30px;
-        margin-top: 5px;
-        border: 1px solid green;
-        border-radius: 4px;
-        /* font-size: 2rem; */
-    /* }
-    
-    .credentials button {
-        width: 20%;
-        padding: 10px;
-        font-size: 1rem;
-        background-color: green;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-left: 270px;
-    }
-    
-    .credentials button:hover {
-        background-color: grey;
-    }
-    
-    .signupcall {
-        margin-top: 10px;
-        margin-left: 240px;
-        font-size: 20px;
-    }   */
-
-    .logincontainer {
+       .logincontainer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 150vh;
         background-color: #f5f5f5;
-        /* gap: 20%; */
         max-width: 100%;
     }
     
     .container {
-        /* text-align: center; */
         margin-top: -770px;
         background-image: url('/public/Images/tea-plantation.jpg');
         background-size: cover;
@@ -614,7 +442,6 @@
         background-color: white;
         margin-left: 0px;
         justify-content: flex-start;
-        /* margin-left: 0px; */
         margin-top: -390px;
     }
     

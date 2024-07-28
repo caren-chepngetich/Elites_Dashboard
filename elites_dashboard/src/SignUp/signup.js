@@ -4,12 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export function SignUp() {
 
-    // const 
     const navigate = useNavigate();
 
-    // const handleSignup = () => {
-    //     navigate('/login');
-    // };
+  
 
     const [formData, setFormData] = useState({
         factoryName: '',
@@ -20,9 +17,7 @@ export function SignUp() {
     });
 
     const [formErrors, setFormErrors] = useState({});
-    // const [setIsFormValid] = useState(false);
-    // const [termsAccepted, setTermsAccepted] = useState(false);
-
+   
     const validateEmail = (email) => {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
@@ -36,10 +31,6 @@ export function SignUp() {
         const { name, value } = e.target;
         setFormData({...formData, [name]: value });
     };
-
-    // const handleCheckboxChange = (e) => {
-    //     setTermsAccepted(e.target.checked);
-    // };
 
     const handleButtonClick = () => {
         const errors = {};
@@ -70,13 +61,8 @@ export function SignUp() {
             isValid = false;
         }
 
-        // if (!termsAccepted) {
-        //     errors.terms = "You must accept the terms and conditions";
-        //     isValid = false;
-        // }
-
         setFormErrors(errors);
-        // setIsFormValid(isValid);
+       
 
         if (isValid) {
             navigate('/login');
@@ -90,8 +76,7 @@ export function SignUp() {
                 <h3 id='signuptext'>Create An Account with us</h3>
                
                <label className='headings'>Enter your factory name </label>
-               {/* <br></br> 
-               <br></br> */}
+             
                <input
                 type="text" 
                 name="factoryName"                 
@@ -100,15 +85,13 @@ export function SignUp() {
                 required
                 onChange={handleInputChange}
                 />
-               <br></br>
-               <br></br>
+                
+                <br></br>               
                {formErrors.factoryName && <p className="error-message">{formErrors.factoryName}</p>}
 
-{/* <div className='input-container'> */}
-<label className='headings'>Enter your email address</label> 
-              {/* <br></br>
-              <br></br> */}
 
+<label className='headings'>Enter your email address</label> 
+            
                 <input 
                 type="email" 
                 name='email'                
@@ -117,12 +100,13 @@ export function SignUp() {
                 required
                 onChange={handleInputChange}
                   />
-                {/* <br></br>
-                <br></br> */}
+                
+                <br></br>
                 {formErrors.email && <p className="error-message">{formErrors.email}</p>}             
-                <br></br>
-                <br></br>
-                <label className='headings'>Enter your registration number</label>            
+                
+
+                <label className='headings'>Enter your registration number</label>   
+
                 <input
                     type="text"
                     name="registrationNumber"
@@ -131,7 +115,7 @@ export function SignUp() {
                     required
                     onChange={handleInputChange}
                 />
-                <br></br>
+                
                 <br></br>
                 {formErrors.registrationNumber && <p className="error-message">{formErrors.registrationNumber}</p>}
 
@@ -143,9 +127,10 @@ export function SignUp() {
                     className={`input ${formErrors.password ? 'input-error' : ''}`}
                     onChange={handleInputChange}
                 />
-                <br></br>
+                
                 <br></br>
                 {formErrors.password && <p className="error-message">{formErrors.password}</p>}
+                
 
                 <label className='headings'>Confirm your password</label>
                 <input
@@ -156,15 +141,14 @@ export function SignUp() {
                     required
                     onChange={handleInputChange}
                 />
-                {/* <br></br>
-                <br></br> */}
+                <br />
                 {formErrors.confirmPassword && <p className="error-message">{formErrors.confirmPassword}</p>}
 
                 <div className='termstext'>
                     <input 
                     type='checkbox'
                     id='checkbox'
-                    // onChange={handleCheckboxChange}
+                  
                     className={formErrors.terms ? 'checkbox-error' : ''}
                     />
 
@@ -177,13 +161,12 @@ export function SignUp() {
                 <button id='signupbtn' onClick={handleButtonClick}> Sign Up</button>
                 <div id='custom-acc'>
                 <p id='login-btn'>Already have an account? 
-                       <Link to="/login">Login</Link></p>
+                       <Link to="/login" style={{ textDecoration: 'none' }}>Login</Link></p>
                  </div>
             </div>
 
             <div className='image'>
-                {/* <img src="/Images/teafarmer.jpg" alt="umuhinzi logo" className='logoimage'/> */}
-                {/* <img src="/images/eliteslogo.png" alt='umuhinzilogo' /> */}
+               
             </div>         
         </div>
     );

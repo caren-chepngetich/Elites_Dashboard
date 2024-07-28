@@ -17,14 +17,15 @@
     background-image: url('/public/Images/teafarmer.jpg');
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
     height: 98.5vh;
     width: 100%;
-    /* display: flex; */
     align-items: center;
     margin-left: 200px;
     margin-top: -50px;
     padding: 20px;
+}
+input {
+    margin-top: 8px !important;
 }
 
 .termstext{
@@ -66,6 +67,7 @@
 
 .headings{
     font-size: 14px;
+    line-height: 20px;
 }
 
 #signuptext{
@@ -74,22 +76,26 @@
 }
 
 #signupbtn{
-    background-color: green;
-    padding: 10px;
+    background-color: #008000;
+    border: none;
+    padding: 7px;
     color: white; 
-    width: 40%;
-    margin-left: 130px;
-    margin-top: 20px;
+    width: 30%;
+    margin-left: 150px;
+    margin-top: 20px; 
+    border-radius: 10px;  
+    font-size: 17px; 
 } 
 
 #logincall{
     color: blue;
+    
 }
 
 .input{
     padding: 9px;
     border: 1.5px solid;
-    border-color: green;
+    border-color: #008000;
     align-items: center;
     width: 120%;
     border-radius: 10px; 
@@ -99,6 +105,7 @@
     margin-left: 80px;
     font-size: 15px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .input-error {
@@ -106,12 +113,9 @@
 }
 
 .error-message{
-    /* content: "⚠ ";   */
         color: #ff0000;
         font-size: 8px;
     margin-top: 0px;
-    /* position: absolute; */
-    /* bottom: 20px; */
     left: 0;
 }
 
@@ -466,4 +470,3 @@
    
 
 }
-
