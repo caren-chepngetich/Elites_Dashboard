@@ -3,29 +3,27 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
 }
 
 .logoimage{
     width: 70%;
     height: 119%;
-    margin-left: 266px;
+    /* margin-left: 26px; */
 }
 
 .image{
     background-image: url('/public/Images/teafarmer.jpg');
     background-size: cover;
     background-position: center;
-    height: 98.5vh;
-    width: 100%;
-    align-items: center;
-    margin-left: 200px;
+    height: 98.3vh;
+    width: 120%;
+    margin-left: 70px;
     margin-top: -50px;
     padding: 20px;
 }
 input {
-    margin-top: 8px !important;
+    margin-top: 8px;
 }
 
 .termstext{
@@ -33,7 +31,6 @@ input {
     margin-top: 330px;
     position: absolute;
     left: 15%;
-
 }
 #custom-acc {
     text-align: left;
@@ -58,11 +55,15 @@ input {
 }
 
 .signup-container{
-    margin-left: 100px;
-    flex: 1;
-    max-width: 400px;
-    margin-top: 0px;
-     
+    margin-left: 30px;
+    padding: 100px;
+    height: 400px;
+    box-shadow: 5px 5px 5px 5px rgba(34,139,34,0.5); 
+    border-radius: 8px;    
+}
+
+.signup-container input, .headings{
+    margin-left: -20px;
 }
 
 .headings{
@@ -72,7 +73,9 @@ input {
 
 #signuptext{
     white-space: nowrap;
-    margin-top: 0px;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    margin-left: -22px;
 }
 
 #signupbtn{
@@ -81,8 +84,8 @@ input {
     padding: 7px;
     color: white; 
     width: 30%;
-    margin-left: 150px;
-    margin-top: 20px; 
+    margin-left: 80px;
+    margin-top: 10px; 
     border-radius: 10px;  
     font-size: 17px; 
 } 
@@ -94,15 +97,16 @@ input {
 
 .input{
     padding: 9px;
-    border: 1.5px solid;
+    border: 1px solid;
     border-color: #008000;
     align-items: center;
-    width: 120%;
-    border-radius: 10px; 
+    width: 100%;
+    border-radius: 4px; 
+    margin-bottom: 10px;
 }
 
 #login-btn{
-    margin-left: 80px;
+    margin-left: 30px;
     font-size: 15px;
     white-space: nowrap;
     text-decoration: none;

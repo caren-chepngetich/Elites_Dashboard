@@ -48,7 +48,7 @@ export const Login = () => {
     return (
         <div className={styles.logincontainer}>
             <div className={styles.container}>
-                <h2 className={styles.dashboardtext}>Easy to use Dashboard</h2>
+                {/* <h2 className={styles.dashboardtext}>Easy to use Dashboard</h2> */}
             </div>
             
             <div className={styles.loginContainer}>

@@ -9,12 +9,12 @@
 
 .container {
     margin-bottom: 50px;
-    background-image: url('/public/Images/tea-plantation.jpg');
+    background-image: url('/public/Images/teafarmer.jpg');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
-    height: 105vh;
-    width: 80%;
+    height: 107vh;
+    width: 60%;
     margin-left: -405px;    
 }
 
@@ -29,8 +29,6 @@
     border-radius: 10px;  
     font-size: 17px; 
 }
-
-
 
 
 .dashboardtext {
@@ -65,7 +63,6 @@
     border: 1px solid green;
     border-radius: 4px;
 }
-
 
 .credentials button:hover {
     background-color: grey;

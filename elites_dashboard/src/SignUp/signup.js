@@ -90,7 +90,7 @@ export function SignUp() {
                {formErrors.factoryName && <p className="error-message">{formErrors.factoryName}</p>}
 
 
-<label className='headings'>Enter your email address</label> 
+                <label className='headings'>Enter your email address</label> 
             
                 <input 
                 type="email" 
@@ -144,24 +144,10 @@ export function SignUp() {
                 <br />
                 {formErrors.confirmPassword && <p className="error-message">{formErrors.confirmPassword}</p>}
 
-                <div className='termstext'>
-                    <input 
-                    type='checkbox'
-                    id='checkbox'
-                  
-                    className={formErrors.terms ? 'checkbox-error' : ''}
-                    />
-
-                    <label id='termsagree'>By clicking sign up, you agree to our terms and conditions</label>
-
-                    </div>
-                    {formErrors.terms && <p className="error-message">{formErrors.terms}</p>}
-
-
                 <button id='signupbtn' onClick={handleButtonClick}> Sign Up</button>
                 <div id='custom-acc'>
                 <p id='login-btn'>Already have an account? 
-                       <Link to="/login" style={{ textDecoration: 'none' }}>Login</Link></p>
+                       <Link to="/login" style={{ textDecoration: 'none' }}> Login</Link></p>
                  </div>
             </div>
 
