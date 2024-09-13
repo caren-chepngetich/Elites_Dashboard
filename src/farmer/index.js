@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 
 const FarmersForm = () => {
- 
+  
   // State for farmers list and form visibility
   const [farmers, setFarmers] = useState(() => {
     const savedFarmers = localStorage.getItem('farmers');
@@ -13,7 +13,6 @@ const FarmersForm = () => {
 
   // State for new farmer input fields
   const [newFarmer, setNewFarmer] = useState({
-    
     id: '',
     names: '',
     surname: '',
@@ -71,70 +70,75 @@ const FarmersForm = () => {
 
   return (
     <div className="farmers-form">
-      {/* Form to add a new farmer */}
-      {showAddForm && (
-        <form onSubmit={handleAddRow} className="form">
-          <input
-            type="text"
-            name="names"
-            value={newFarmer.names}
-            onChange={handleInputChange}
-            placeholder="Names"
-            required
-            className="farmer-column"
-          />
-          <input
-            type="text"
-            name="surname"
-            value={newFarmer.surname}
-            onChange={handleInputChange}
-            placeholder="Surname"
-            required
-            className="farmer-column"
-          />
-          <input
-            type="text"
-            name="acreage"
-            value={newFarmer.acreage}
-            onChange={handleInputChange}
-            placeholder="Acreage"
-            required
-            className="farmer-column"
-          />
-          <input
-            type="text"
-            name="location"
-            value={newFarmer.location}
-            onChange={handleInputChange}
-            placeholder="Location"
-            required
-            className="farmer-column"
-          />
-          <button className="submit">Add Farmer</button>
-        </form>
-      )}
+      {/* Subtitle for Farmers */}
+      <h2>Farmers</h2>
 
-      {/* Table to display list of farmers */}
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Names</th>
-            <th>Surname</th>
-            <th>Acreage</th>
-            <th>Location</th>
-            {/* <th>Actions</th> */}
-          </tr>
-        </thead>
-        <tbody>
-          {renderFarmers()}
-        </tbody>
-      </table>
+      <div className='borderBottomSides'>
+        {/* Form to add a new farmer */}
+        {showAddForm && (
+          <form onSubmit={handleAddRow} className="form">
+            <input
+              type="text"
+              name="names"
+              value={newFarmer.names}
+              onChange={handleInputChange}
+              placeholder="Names"
+              required
+              className="farmer-column"
+            />
+            <input
+              type="text"
+              name="surname"
+              value={newFarmer.surname}
+              onChange={handleInputChange}
+              placeholder="Surname"
+              required
+              className="farmer-column"
+            />
+            <input
+              type="text"
+              name="acreage"
+              value={newFarmer.acreage}
+              onChange={handleInputChange}
+              placeholder="Acreage"
+              required
+              className="farmer-column"
+            />
+            <input
+              type="text"
+              name="location"
+              value={newFarmer.location}
+              onChange={handleInputChange}
+              placeholder="Location"
+              required
+              className="farmer-column"
+            />
+            <button type="submit" className="submit">Add Farmer</button>
+          </form>
+        )}
 
-      {/* Button to toggle add form visibility */}
-      <button onClick={() => setShowAddForm(!showAddForm)}>
-        {showAddForm ? 'Hide Form' : 'Show Add Form'}
-      </button>
+        {/* Table to display list of farmers */}
+        <table>
+          <thead>
+            <tr>
+              {/* <th>ID</th>
+              <th>Names</th>
+              <th>Surname</th>
+              <th>Acreage</th>
+              <th>Location</th> */}
+              {/* <th>Actions</th> */}
+            </tr>
+          </thead>
+          <tbody>
+            {renderFarmers()}
+          </tbody>
+        </table>
+
+        {/* Button to toggle add form visibility */}
+        <button onClick={() => setShowAddForm(!showAddForm)}>
+          {showAddForm ? 'Hide Form' : 'Show Add Form'}
+        </button>
+      </div>
     </div>
   );
 };

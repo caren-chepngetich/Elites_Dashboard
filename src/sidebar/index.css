@@ -1,521 +1,104 @@
 
-.sidebar {
-    width: 250px;
-    height: 98vh;
-    background-color: #009900;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;margin-top: -4.5%;
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  /* background-color: #41f73b;  */
+  /* color: white;  */
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column;
+  background-color: #1B8E18;
+}
 
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav li {
-    margin: 15px 0;
-    font-size: 18px;
-  }
-  .dashboard{
-    display: flex;
-    gap: 15px;
-  }
-  .farm{
-    display: flex;
-    gap: 15px;
-  }
-  .farmicon{
-    margin-top: 16px;
+/* Logo container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
 
-  }
-  .analytics{
-    display: flex;
-    gap: 15px;
+/* Logo image styling */
+.logo {
+  width: 120px;
+  height: auto;
+}
 
-  }
-  .analyticsicon{
-    margin-top: 16px; 
+/* Horizontal line */
+.line {
+  border: 0;
+  border-top: 1px solid rgba(240, 234, 234, 0.2); /* Line color */
+  margin: 20px 0;
+}
 
-  }
-  .dashboardicon{
-    margin-top: 16px;
-  }
-  .product{
-    display: flex;
-    gap: 15px;
+/* List styling */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
 
-  }
-  .producticon{
-    margin-top: 16px;
+/* List items */
+.sidebar ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Item separator color */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-  }
-  
-  .settings-logout button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #006600;
-    color: white;
-    border: none;
-    margin-bottom: 30%;
-    cursor: pointer;
-  }
-  
-  .settings-logout button:hover {
-    background-color: #004d00;
-  }
-  
-  .menu-button {
-    display: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #009900;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000;
-    font-size: 24px;
-  }
-  
-  .menu-button:hover {
-    background-color: #006600;
-  }
-  
-  @media (max-width: 768px) {
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      transform: translateX(-100%);
-      z-index: 999;
-    }
-  
-    .sidebar.open {
-      transform: translateX(0);
-    }
-  
-    .menu-button {
-      display: block;
-      
-    }
-  
-    .settings-logout {
-     margin-bottom: 10%;
-    }
-  
-    nav ul {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    nav li {
-      margin: 10px 0;
-    }
-    button{
-      border: solid 2px;
-     
-    }
-    body{
-      width: 200px;
-    }
-  }
-  @media screen and (min-width:769px) and (max-width:880px){
-    .sidebar {
-      width: 250px;
-      height: 97.6vh;
-      background-color: #009900;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;margin-top: -11%;
-  
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    nav li {
-      margin: 15px 0;
-      font-size: 18px;
-    }
-    .dashboard{
-      display: flex;
-      gap: 15px;
-    }
-    .farm{
-      display: flex;
-      gap: 15px;
-    }
-    .farmicon{
-      margin-top: 16px;
-  
-    }
-    .analytics{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .analyticsicon{
-      margin-top: 16px; 
-  
-    }
-    .dashboardicon{
-      margin-top: 16px;
-    }
-    .product{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .producticon{
-      margin-top: 16px;
-  
-    }
-    
-    .settings-logout button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      background-color: #006600;
-      color: white;
-      border: none;
-      margin-bottom: 30%;
-      cursor: pointer;
-    }
-    
-    .settings-logout button:hover {
-      background-color: #004d00;
-    }
-    
-    .menu-button {
-      display: none;
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #009900;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 1000;
-      font-size: 24px;
-    }
-    
-    .menu-button:hover {
-      background-color: #006600;
-    } 
-  }
-  @media screen and (min-width:881px) and (max-width:1020px){
-    .sidebar {
-      width: 250px;
-      height: 107.4vh;
-      background-color: #009900;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;margin-top: -11%;
-  
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    nav li {
-      margin: 15px 0;
-      font-size: 18px;
-    }
-    .dashboard{
-      display: flex;
-      gap: 15px;
-    }
-    .farm{
-      display: flex;
-      gap: 15px;
-    }
-    .farmicon{
-      margin-top: 16px;
-  
-    }
-    .analytics{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .analyticsicon{
-      margin-top: 16px; 
-  
-    }
-    .dashboardicon{
-      margin-top: 16px;
-    }
-    .product{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .producticon{
-      margin-top: 16px;
-  
-    }
-    
-    .settings-logout button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      background-color: #006600;
-      color: white;
-      border: none;
-      margin-bottom: 30%;
-      cursor: pointer;
-    }
-    
-    .settings-logout button:hover {
-      background-color: #004d00;
-    }
-    
-    .menu-button {
-      display: none;
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #009900;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 1000;
-      font-size: 24px;
-    }
-    
-    .menu-button:hover {
-      background-color: #006600;
-    } 
-  }
-  @media screen and (min-width:1021px) and (max-width:1279px){
-    .sidebar {
-      width: 250px;
-      height: 97vh;
-      background-color: #009900;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;margin-top: -16%;
-  
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    nav li {
-      margin: 15px 0;
-      font-size: 18px;
-    }
-    .dashboard{
-      display: flex;
-      gap: 15px;
-    }
-    .farm{
-      display: flex;
-      gap: 15px;
-    }
-    .farmicon{
-      margin-top: 16px;
-  
-    }
-    .analytics{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .analyticsicon{
-      margin-top: 16px; 
-  
-    }
-    .dashboardicon{
-      margin-top: 16px;
-    }
-    .product{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .producticon{
-      margin-top: 16px;
-  
-    }
-    
-    .settings-logout button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      background-color: #006600;
-      color: white;
-      border: none;
-      margin-bottom: 30%;
-      cursor: pointer;
-    }
-    
-    .settings-logout button:hover {
-      background-color: #004d00;
-    }
-    
-    .menu-button {
-      display: none;
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #009900;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 1000;
-      font-size: 24px;
-    }
-    
-    .menu-button:hover {
-      background-color: #006600;
-    }
-  }
-  @media screen and (min-width:1280px) and (max-width:1480px){
-    .sidebar {
-      width: 250px;
-      height: 94.9vh;
-      background-color: #009900;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;margin-top: -4.7%;
-  
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    nav li {
-      margin: 15px 0;
-      font-size: 18px;
-    }
-    .dashboard{
-      display: flex;
-      gap: 15px;
-    }
-    .farm{
-      display: flex;
-      gap: 15px;
-    }
-    .farmicon{
-      margin-top: 16px;
-  
-    }
-    .analytics{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .analyticsicon{
-      margin-top: 16px; 
-  
-    }
-    .dashboardicon{
-      margin-top: 16px;
-    }
-    .product{
-      display: flex;
-      gap: 15px;
-  
-    }
-    .producticon{
-      margin-top: 16px;
-  
-    }
-    
-    .settings-logout button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      background-color: #006600;
-      color: white;
-      border: none;
-      margin-bottom: 30%;
-      cursor: pointer;
-    }
-    
-    .settings-logout button:hover {
-      background-color: #004d00;
-    }
-    
-    .menu-button {
-      display: none;
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #009900;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 1000;
-      font-size: 24px;
-    }
-    
-    .menu-button:hover {
-      background-color: #006600;
-    }
+/* Remove border from the last list item */
+.sidebar ul li:last-child {
+  border-bottom: none;
+}
 
-  }
-  
+/* Active list item */
+.active {
+  color: black; /* Active item text color */
+  font-weight: bold; /* Bold text for active item */
+  background-color: transparent; /* Active item background color */
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 200px; /* Width of the active indicator */
+  height: 60%; /* Height of the active indicator */
+  /* background-color: green; */
+  border-radius: 50px; /* Rounded corners */
+  transform: translateY(-50%);
+  z-index: -1; /* Ensure the indicator is behind the text */
+}
+
+/* Dashboard list item */
+.dashboard {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Icon styling */
+.icons {
+  margin-right: 10px;
+  font-size: 20px; /* Size of icons */
+}
+
+/* Navigations container */
+.navigations {
+  position: absolute;
+  bottom: 26px; /* Distance from the bottom */
+}
+
+/* List item span */
+.sidebar ul li span {
+  flex: 1;
+}
+

@@ -1,54 +1,64 @@
 import React, { useState } from 'react';
 import './index.css';
-import { MdDashboard } from "react-icons/md";
+// import { SiWindows } from "react-icons/si";
+import { AiFillAppstore } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
-import { MdAnalytics } from "react-icons/md";
-import { AiFillProduct } from "react-icons/ai";
-
+import { BsFileBarGraph } from "react-icons/bs";
+import { AiFillDatabase } from "react-icons/ai";
+import { IoSettingsSharp } from "react-icons/io5";
+import { LuLogOut } from "react-icons/lu";
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+  const [activeItem, setActiveItem] = useState('Dashboard');
+  const handleItemClick = (itemName) => {
+    setActiveItem(itemName);
   };
-
   return (
-    <>
-      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <div className="logo">Umuhinzi</div>
-        <nav>
-          <ul>
-            <div className='dashboard'>
-              <MdDashboard className='dashboardicon'/>
-              <li>Dashboard</li>
-            </div>
-            <br/>
-            <div className='farm'>
-              <IoIosPeople className="farmicon"/>
-              <li>Farmers</li>
-            </div>
-            <br/>
-            <div className='analytics'>
-              <MdAnalytics className='analyticsicon'/>
-              <li>Analytics</li>
-            </div>
-            <br/>
-            <div className='product'>
-              <AiFillProduct className='producticon'/>
-              <li>Products</li>
-            </div>
-          </ul>
-        </nav>
-        <div className="settings-logout">
-          <button>Settings</button>
-          <button>Logout</button>
+    <div id="sidebar">
+      <div className="logo-container">
+        <img src='/Images/logo.png' alt='' className='logo'></img>
+      </div>
+      <hr className="line" />
+      <ul>
+        <li className={activeItem === 'Dashboard' ? 'active dashboard' : 'dashboard'} onClick={() => handleItemClick('Dashboard')}>
+          <p className='icons'><AiFillAppstore /></p>
+          <span>Dashboard</span>
+        </li>
+        <li className={activeItem === 'Farmers' ? 'active dashboard' : 'dashboard'} onClick={() => handleItemClick('Farmers')}>
+          <p className='icons'><IoIosPeople /></p>
+          <span>Farmers</span>
+        </li>
+        <li className={activeItem === 'Analytics' ? 'active dashboard' : 'dashboard'} onClick={() => handleItemClick('Analytics')}>
+          <p className='icons'><BsFileBarGraph /></p>
+          <span>Analytics</span>
+        </li>
+        <li className={activeItem === 'Products' ? 'active dashboard' : 'dashboard'} onClick={() => handleItemClick('Products')}>
+          <p className='icons'><AiFillDatabase /></p>
+          <span>Products</span>
+        </li>
+        <div className='navigations'>
+          <li className={activeItem === 'Settings' ? 'active dashboard' : 'dashboard'} onClick={() => handleItemClick('Settings')}>
+            <p className='icons'><IoSettingsSharp /></p>
+            <span>Settings</span>
+          </li>
+          <li className={activeItem === 'Logout' ? 'active dashboard' : 'dashboard'} onClick={() => handleItemClick('Logout')}>
+            <p className='icons'><LuLogOut /></p>
+            <span>LogOut</span>
+          </li>
         </div>
-      </div>
-      <div className="menu-button" onClick={toggleSidebar}>
-        ☰
-      </div>
-    </>
+      </ul>
+    </div>
   );
-}
+};
+export default Sidebar
 
-export default Sidebar;
+
+
+
+
+
+
+
+
+
+
+

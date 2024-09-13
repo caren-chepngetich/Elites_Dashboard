@@ -2,7 +2,7 @@
 import './App.css';
 import Farmer from './farmer';
 import Header from './header';
-import Sidebar from './sidebar';
+// import Sidebar from './sidebar';
 
 import React from 'react';
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="App-content">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div className="farmer-content">
           <Farmer />
         </div>

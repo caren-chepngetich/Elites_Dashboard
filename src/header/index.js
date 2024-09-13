@@ -7,7 +7,7 @@ import { CgProfile } from "react-icons/cg";
 
 function Header() {
   return (
-        <header>
+        <header > 
           <div>
           
           <input type="text" placeholder="Search" className="search-bar" /><IoMdSearch className="searchbutton" />
@@ -25,6 +25,8 @@ function Header() {
             <p>Mabroukie Factory</p>
             <p>mabroukie@gmail.com</p>
             </div>
+           
+            
           </div>
         </header>
   );
